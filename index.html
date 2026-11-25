@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Дарьи</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="titulo">Небольшой подарок для тебя, Дарья</h1>
+
+    <div class="tarjeta-rascable">
+        <div class="capa-inferior">
+            <div class="sobre-contenedor" id="sobre-imagen" role="button" tabindex="0" aria-label="Открыть письмо">
+                <svg class="sobre-svg" viewBox="0 0 220 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="12" y="22" width="196" height="116" rx="8" fill="#efe0cf" stroke="#d5be9f" stroke-width="2"/>
+                    <polygon points="12,22 110,88 208,22" fill="#f7ece0" stroke="#d5be9f" stroke-width="2" stroke-linejoin="round"/>
+                    <polygon points="12,138 92,76 12,22" fill="#e6d2ba" stroke="#d5be9f" stroke-width="1.5" stroke-linejoin="round"/>
+                    <polygon points="208,138 128,76 208,22" fill="#e6d2ba" stroke="#d5be9f" stroke-width="1.5" stroke-linejoin="round"/>
+                    <polygon points="12,138 110,72 208,138" fill="#f2e4d3" stroke="#d5be9f" stroke-width="1.5" stroke-linejoin="round"/>
+                    <circle cx="110" cy="86" r="17" fill="#b8292f" stroke="#8c1b20" stroke-width="2"/>
+                    <circle cx="110" cy="86" r="12.5" fill="none" stroke="#f3c669" stroke-width="1.2" stroke-dasharray="2 2"/>
+                    <polygon points="110,77 112.6,82.6 118.8,83.4 114.3,87.6 115.5,93.8 110,90.8 104.5,93.8 105.7,87.6 101.2,83.4 107.4,82.6" fill="#f3c669"/>
+                </svg>
+                <p class="instruccion-sobre">Нажми на конверт...</p>
+            </div>
+        </div>
+
+        <canvas id="canvas-capa-2" class="capa-rascable"></canvas>
+        <canvas id="canvas-capa-1" class="capa-rascable"></canvas>
+    </div>
+
+    <div id="nota-final" class="nota-oculta">
+        <div class="contenido-nota">
+            <h2>¡Feliz Cumpleaños, Darya! (С днём рождения!)</h2>
+            <p>
+                Пусть Господь благословит тебя и подарит процветающую жизнь, полную
+                здоровья, мира и радости. Спасибо тебе за дружбу — даже если мы сейчас
+                общаемся реже, я от души ценю, что ты была рядом в трудные времена. Прости,
+                если в чём-то был не прав или не всегда на связи, но знай, что я очень ценю
+                нашу дружбу, тепло к тебе отношусь и правда благодарю Бога за то, что он свёл
+                нас на этом пути. Желаю тебе всего самого лучшего!
+            </p>
+            <p class="firma">Con cariño, Gabriel</p>
+        </div>
+    </div>
+
+    <div class="reproductor-discreto" id="reproductor-musica">
+        <button type="button" id="btn-musica" class="btn-musica" aria-label="Воспроизвести или поставить на паузу музыку">
+            ▶ ♪ Molchat Doma — Клетка
+        </button>
+        <audio id="audio-fondo" loop preload="none">
+            <source src="media/kletka.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
